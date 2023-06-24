@@ -3,7 +3,7 @@
 # It produces a new file ready for translation
 
 # open and read the original file
-original_file = open("subtitles_original.txt","r")
+original_file = open("subtitles_original.srt","r")
 try:
     content = original_file.read()
 finally:

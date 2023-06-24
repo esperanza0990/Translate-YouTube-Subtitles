@@ -17,7 +17,7 @@ func main() {
 	target_container_sas_token = strings.Trim(target_container_sas_token, "\"")
 	azure_translator_endpoint := "<copy-your-endpoint-from-the-azure-portal>"
 	azure_translator_key := "<your-translator-key>"
-	request_uri := azure_translator_endpoint + "/batches"
+	request_uri := azure_translator_endpoint + "/translator/text/batch/v1.0/batches"
 	request_method := "POST"
 
 	json_content := fmt.Sprintf(`{

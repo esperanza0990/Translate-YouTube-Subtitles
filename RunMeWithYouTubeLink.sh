@@ -25,9 +25,6 @@ youtube-dl --convert-subs srt --write-sub --sub-lang en --skip-download -o sub $
 # --skip-download flag, so we need to convert it from vtt to srt using ffmpeg.
 ffmpeg -i sub.en.vtt subtitles_original.srt
 
-# rename the srt file to txt format to use in Azure translator
-mv subtitles_original.srt subtitles_original.txt
-
 # remove trash
 rm sub.en.vtt
 
